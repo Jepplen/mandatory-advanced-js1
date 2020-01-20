@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* ============= LOGIN PAGE ============= */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#chatLoginContent {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 200px;
+
+}
+
+#loginForm {
+  margin-top: 50px;
+}
+
+#loginName {
+
+}
+
+#loginButton {
+
+}
+
+
+/* ============= CHAT BOARD PAGE ============= */
+
+.chatPage {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+header{
+  width: 300px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  width: 600px;
+  height: 500px;
+}
+
+.chatWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: dodgerblue;
+}
+
+.chatContent {
+  width: 80%;
+  height: 65%;
+  background-color: white;
+}
+
+.newMessageWrapper {
+ width: 100%;
+ height: 25%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+
+#chatForm {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+#newMessageInput {
+  width: 80%;
+  height: 50px;
+}
+
+#chatButton {
+margin-left: 440px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 11px;
+}
+
+span {
+  padding-right: 3px;
+}
+
+.chatContent {
+  overflow: auto;
 }
